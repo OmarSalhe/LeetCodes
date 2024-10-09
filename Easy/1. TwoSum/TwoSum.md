@@ -1,4 +1,4 @@
-### Two Sum
+### 1. Two Sum
 
 The idea is to find the complement (or pair) necessary for their sums to equal the target.
 
