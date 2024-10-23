@@ -1,3 +1,4 @@
+from collections import heapq
 class Solution:
     def longestDiverseString(self, a: int, b: int, c: int) -> str:
         # max-heap containing (number of letter, letter)

@@ -1,3 +1,4 @@
+from typing import List
 class Solution(object):
     def findMedianSortedArrays(self, nums1: List[int], nums2: List[int]) -> List[int]:
         def merge(nums1, m, nums2, n):
