@@ -1,3 +1,5 @@
+from typing import List
+
 class Solution:
     def countUnguarded(self, m: int, n: int, guards: List[List[int]], walls: List[List[int]]) -> int:
         matrix = [['U' for _ in range(n)] for _ in range(m)]
@@ -36,17 +38,12 @@ class Solution:
                 if matrix[r][c] == 'U':
                     unguarded += 1
         return unguarded
-                
-
-
 
         """
         approach #2 (brute-force):
             mark all cells visible to guards as 'guarded'
             stop if wall or bounds
         """
-
-
 
         # seen = set((r, c) for r, c in guards)
         # walls = set((r, c) for r, c in walls)
